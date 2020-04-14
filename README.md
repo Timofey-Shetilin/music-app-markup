@@ -1,2 +1,2 @@
 # music-app-markup
-HTMLa and Pure CSS only
+HTML and Pure CSS only
