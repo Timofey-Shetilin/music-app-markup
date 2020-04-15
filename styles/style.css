@@ -1,3 +1,9 @@
+/* ---- For all blocks ---- */
+.description-element {
+    font-size: 14px;
+    font-weight: 400;
+}
+
 /* ---- Header ---- */
 .header {
     background-image: url(../images/header__background.png);
@@ -159,11 +165,13 @@
     justify-content: center;
 
     margin-top: 60px;
+    margin-bottom: 57px;
 
     font-family: 'Roboto';
     font-weight: 400;
 }
-.features-element {
+.features__item-description {
+    font-family: 'Roboto';
     width: 200px;
 }
 .features__item {
@@ -216,7 +224,6 @@
 }
 .features__item-description {
     color: #99aaa8;
-    font-size: 14px;
 }
 .features__column-1 {
     margin-right: 80px;
@@ -299,4 +306,62 @@
     background-image: url(../images/features__ready-made-modules-icon.svg);
     background-position: center;
     background-repeat: no-repeat;
+}
+
+/* ---- Music Medication ---- */
+.music-medication {
+    height: 596px;
+    background-image: url(../images/music-medication-background.jpg);
+    background-repeat: no-repeat;
+}
+.music-medication__content {
+    display: flex;
+    justify-content: space-between;
+
+    color: #ffff;
+}
+.music-medication__banner-images {
+    margin-top: 85px;
+    margin-left: 163px;
+}
+.music-medication__phone-img:nth-child(1) {
+    z-index: 3
+}
+.music-medication__phone-img:nth-child(2) {
+    transform: translateX(-43px);
+    opacity: 0.6;
+    z-index: 2
+}
+.music-medication__phone-img:nth-child(3) {
+    transform: translateX(-86px);
+    opacity: 0.3;
+    z-index: 1;
+}
+.music-medication__phone-img {
+    position: absolute;
+}
+.music-medication__text {
+    margin-top: 205px;
+}
+.music-medication__title {
+    position: relative;
+
+    font-family: 'Lato';
+    font-size: 30px;
+}
+.music-medication__title::after {
+    content: '';
+    display: block;
+    position: absolute;
+
+    width: 70px;
+    height: 1px;
+
+    background-color: #ffff;
+}
+.music-medication__description {
+    font-family: 'Lato';
+    margin-top: 0px;
+
+    width: 750px;
 }
