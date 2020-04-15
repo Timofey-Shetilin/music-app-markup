@@ -5,48 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:ital@0;1&family=Oswald:wght@700&family=Poppins:wght@400;600;900&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header>
+    <header class="header">
+            <div class="header__site-nav">
+                    <span class="header__logo">
+                        <strong>App</strong> Logo
+                    </span>
+                    <nav class="header__navigation">
+                        <ul>
+                            <li><a class="header__nav-item" href="#">Home</a></li>
+                            <li><a class="header__nav-item" href="#">Features</a></li>
+                            <li><a class="header__nav-item" href="#">Screenshots</a></li>
+                            <li><a class="header__nav-item" href="#">Video</a></li>
+                            <li><a class="header__nav-item" href="#">Services</a></li>
+                            <li><a class="header__nav-item" href="#">Testimonials</a></li>
+                            <li><a class="header__nav-item" href="#">Our team</a></li>
+                            <li><a class="header__nav-item" href="#">Partners</a></li>
+                            <li><a class="header__nav-item" href="#">Pricing</a></li>
+                        </ul>
+                    </nav>
+            </div>
+                
         <div class="wrapper">
-                <span class="header__logo">
-                    <strong>App</strong> Logo
-                </span>
-            <nav class="header__navigation">
-                <ul>
-                    <li class="header__nav-item">Home</li>
-                    <li class="header__nav-item">Features</li>
-                    <li class="header__nav-item">Screenshots</li>
-                    <li class="header__nav-item">Video</li>
-                    <li class="header__nav-item">Services</li>
-                    <li class="header__nav-item">Testimonials</li>
-                    <li class="header__nav-item">Our team</li>
-                    <li class="header__nav-item">Partners</li>
-                    <li class="header__nav-item">Pricing</li>
-                </ul>
-            </nav>
-
             <div class="header__music-app">
                 <h1 class="header__title">
                     Best music app for Android and iOS
                 </h1>
 
-                <a href="" class="header__market-link-button google-play-link">
-                    <span class="header__store-description">
-                        Download on <strong>Google Play</strong>
-                        <img src="" alt="">
-                    </span>
-                </a>
-                <a href="" class="header__market-link-button app-store-link">
-                    <span class="header__store-description">
-                        Download on <strong>App store</strong>
-                        <img src="" alt="">
-                    </span>
-                </a>
-                
-                <img src="" alt="">
+                <div class="header__market-links">
+                    <a href="" class="header__market-link-button google-play-link">
+                        <span class="header__store-description google-play-desc" href="#">
+                            Download on <strong>Google Play</strong>
+                        </span>
+                    </a>
+                    <a href="" class="header__market-link-button app-store-link">
+                        <span class="header__store-description app-store-desc" href="#">
+                            Download on <strong>App store</strong>
+                        </span>
+                    </a>
+                </div>
 
+                <img class="header__phone" src="images/header__phone.png">
             </div>
         </div>  
     </header>

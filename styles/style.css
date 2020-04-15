@@ -1,0 +1,132 @@
+.header {
+    height: 585px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/header__background.png);
+}
+.wrapper {
+    margin: 0 auto;
+
+    width: 1170px;
+}
+.header__site-nav {
+    box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.004);
+
+    padding-top: 23px;
+    padding-bottom: 23px;
+
+    display: flex;
+    justify-content: space-between;
+
+    font-family: 'Open Sans';
+    font-weight: 400;
+
+    color: #ffff;
+    background-color: #105b9f;
+}
+.header__navigation > ul {
+    margin-top: 7px;
+    margin-left: 80px;
+    display: flex;
+
+    text-transform: uppercase;
+    list-style-type: none;
+    font-size: 14px;
+}
+.header__logo {
+    margin-left: 131px;
+    margin-top: 0px;
+    
+    font-size: 24px;
+}
+.header__navigation {
+    margin-right: 74px;
+}
+.header__nav-item {
+    color: #ffff;
+
+    text-decoration: none;
+    margin-right: 35px;
+}
+.header__title {
+    width: 660px;
+    color: #ffff;
+
+    margin-top: 100px;
+    margin-left: 10px;
+    margin-bottom: 0;
+
+    font-family: 'Poppins';
+    font-weight: 900;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+.header__market-links {
+    display: flex;
+
+    margin-left: 9px;
+    margin-top: 70px;
+}
+.header__market-link-button {
+    color: #ffff;
+
+    font-family: 'Poppins';
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration: none;
+
+    position: relative;
+
+    width: 90px;
+
+    margin-right: 25px;
+    padding-top: 12px;
+    padding-bottom: 14px;
+    padding-right: 15px;
+    padding-left: 80px;
+
+    border: 1px solid #ffff;
+    border-radius: 10px;
+}
+.header__market-link-button > strong {
+    font-weight: 500;
+}
+.google-play-link::before {
+    content: '';
+    display: block;
+    position: absolute;
+
+    margin-left: -57px;
+    margin-top: -4px;
+
+    width: 33px;
+    height: 36px;
+
+    background-image: url(../images/google-play-icon.svg);
+    background-repeat: no-repeat;
+}
+.app-store-link::before {
+    content: '';
+    display: block;
+    position: absolute;
+
+    width: 33px;
+    height: 37px;
+
+    margin-top: -5px;
+    margin-left: -60px;
+
+    background-image: url(../images/app-store-icon.svg);
+    background-repeat: no-repeat;
+}
+.header__phone {
+    position: absolute;
+    transform: rotate(-15deg);
+
+    margin-top: 155px;
+    margin-right: 56px;
+
+    right: 0;
+    top: 0;
+}
