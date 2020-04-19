@@ -62,6 +62,14 @@
 .header__nav-item:hover {
     background-color: #2f77b7;
 }
+@keyframes headerFadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 .header__title {
     width: 660px;
     color: #ffff;
@@ -74,6 +82,10 @@
     font-weight: 900;
     font-size: 60px;
     text-transform: uppercase;
+
+    animation: headerFadeIn 1s;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
 }
 .header__market-links {
     display: flex;
@@ -100,6 +112,9 @@
 
     border: 1px solid #ffff;
     border-radius: 10px;
+}
+.header__market-link-button:active {
+    transform: scale(0.97);
 }
 .header__market-link-button > strong {
     font-weight: 500;
@@ -323,17 +338,18 @@
 .music-medication__banner-images {
     margin-top: 85px;
     margin-left: 163px;
+
+    transform: translateX(-80px);
 }
-.music-medication__phone-img:nth-child(1) {
-    z-index: 3
+.app-in-phone-1 {
+    z-index: 3;
 }
-.music-medication__phone-img:nth-child(2) {
-    transform: translateX(-43px);
+.app-in-phone-2 {
+    margin-left: -43px;
     opacity: 0.6;
-    z-index: 2
 }
-.music-medication__phone-img:nth-child(3) {
-    transform: translateX(-86px);
+.app-in-phone-3 {
+    margin-left: -86px;
     opacity: 0.3;
     z-index: 1;
 }
@@ -364,4 +380,58 @@
     margin-top: 0px;
 
     width: 750px;
+}
+
+
+/* ---- Screenshots ---- */
+.screenshots__title {
+    margin-top: 55px;
+}
+.screenshots_screenshot-item {
+    position: absolute;
+    cursor: pointer;
+}
+.screenshots_content {
+    margin: 0 auto;
+    margin-top: 61px;
+    margin-bottom: 100px;
+
+    height: 530px;
+    width: 1145px;
+}
+.screenshot_n1 {
+    height: 530px;
+    width: 296px;
+}
+.screenshot_n2 {
+    height: 275px;
+    width: 216px;
+
+    margin-left: 300px;
+}
+.screenshot_n3 {
+    height: 275px;
+    width: 216px;
+
+    margin-left: 518px;
+}
+.screenshot_n4 {
+    width: 404px;
+    height: 330px;
+
+    margin-left: 737px;
+}
+.screenshot_n5 {
+    height: 250px;
+    width: 435px;
+
+    margin-top: 278px;
+    margin-left: 300px;
+}
+.screenshot_n6 {
+    width: 404px;
+    height: 195px;
+
+    margin-top: 335px;
+    margin-left: 737px;
 }
