@@ -435,3 +435,54 @@
     margin-top: 335px;
     margin-left: 737px;
 }
+
+/* Information about app */
+.information-about-app {
+    height: 202px;
+
+    background-image: url(../images/music-medication-background.jpg);
+    background-repeat: no-repeat;
+}
+.information-about-app__content {
+    display: flex;
+    justify-content: space-between;
+
+    color: #ffff;
+}
+.information-about-app__item {
+    margin-top: 55px;
+}
+.information-about-app__item::before{
+    content: '';
+    display: block;
+    position: absolute;
+
+    width: 1px;
+    height: 131px;
+
+    margin-left: -87px;
+
+    background-color: #ffff;
+}
+.users-count::before {
+    display: none;
+}
+.information-about-app__item-title {
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 72px;
+
+    margin: 0px;
+}
+.information-about-app__item-desc {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 18px;
+
+    text-transform: uppercase;
+
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+}
